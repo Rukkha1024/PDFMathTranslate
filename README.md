@@ -65,11 +65,11 @@ conda activate pdf2zh
 # 2. API 관련 환경변수 설정
 ## Google Gemini API
 $env:GEMINI_MODEL = "gemini-2.0-flash"
-$env:GEMINI_API_KEY = "AIzaSyBrO4IdklakfJxnqioyIWRwELucohZjqdo"  
+$env:GEMINI_API_KEY = "XXXXX"  
 
 ## DeepSeek API 설정
 $env:DEEPSEEK_MODEL = "deepseek-chat"
-$env:DEEPSEEK_API_KEY = "sk-7319a3417d9a4b5da5f5d02d2fae0338" 
+$env:DEEPSEEK_API_KEY = "XXXXX" 
 
 # 3. 번역할 언어 설정 (원본: 영어, 대상: 한국어)
 $env:SOURCE_LANG = "en"
