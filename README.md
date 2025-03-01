@@ -35,26 +35,9 @@ Get-Command pdf2zh
 ```
 출력 결과에 `C:\Users\<사용자이름>\.conda\envs\pdf2zh\Scripts\pdf2zh.exe` 또는 유사한 경로가 포함되어 있어야 합니다.
 
-## 5. pdf2zh 사용법
-### 5.1 CLI 모드 (명령어 실행)
-터미널에서 PDF 번역을 실행하려면 아래 명령어를 사용합니다.
-```bash
-pdf2zh path\to\document.pdf
-```
-변환된 PDF 파일 두 개(번역본, 원본-번역 비교본)가 현재 작업 폴더에 생성됩니다.
 
-### 5.2 GUI 모드 (웹 인터페이스)
-인터랙티브 웹 UI를 실행하려면 다음 명령어를 사용합니다.
-```bash
-pdf2zh -i
-```
-웹 브라우저가 자동으로 실행되지 않으면, 수동으로 아래 주소에 접속하세요.
-```
-http://localhost:7860
-```
-
-## 6. 문제 해결 (Troubleshooting)
-### 6.1 `pdf2zh` 명령어가 인식되지 않는 경우
+## 5. 문제 해결 (Troubleshooting)
+### 5.1 `pdf2zh` 명령어가 인식되지 않는 경우
 - 올바른 Conda 가상환경이 활성화되어 있는지 확인하세요.
   ```bash
   conda activate pdf2zh
@@ -66,17 +49,13 @@ http://localhost:7860
 - 만약 `pdf2zh` 실행 파일이 가상환경이 아닌 **사용자 폴더**(`AppData\Roaming\Python\Python310\Scripts` 등)에 있다면,  
   **1번 과정(기존 설치 제거)**을 수행한 후 다시 설치하세요.
 
-### 6.2 `argos-translate` 관련 경고 메시지
+### 5.2 `argos-translate` 관련 경고 메시지
 실행 시 `"argos-translate is not installed"` 경고가 표시될 수 있습니다.  
 이는 pdf2zh의 특정 번역 엔진을 사용할 때만 필요한 라이브러리이므로, 무시해도 됩니다.  
 해당 기능이 필요하면 아래 명령어로 추가 설치하세요.
 ```bash
 pip install argostranslate
 ```
-
-### 6.3 추가 번역 서비스 사용
-DeepL, OpenAI 등의 번역 API를 사용하려면 추가적인 환경 변수가 필요할 수 있습니다.  
-자세한 내용은 [공식 문서](https://github.com/Byaidu/PDFMathTranslate/blob/main/docs/ADVANCED.md#services)를 참고하세요.
 
 # **아나콘다 가상환경에서 코드 실행** 
 ``` text
