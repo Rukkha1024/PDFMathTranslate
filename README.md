@@ -100,6 +100,7 @@ $env:THREAD = 5
 #     예시:
 #       - Gemini API 사용 시: `-s gemini`
 #       - DeepSeek API 사용 시: `-s deepseek`
+# 		  - Chat GPT API 사용 시: `-s openai`
 #     각 서비스에 맞는 환경변수를 반드시 설정해야 합니다.
 # - `-t $env:THREAD`        : 멀티스레드 개수를 지정합니다.
 # - `-o $outputDir`         : 번역 결과가 저장될 출력 폴더를 지정합니다.
